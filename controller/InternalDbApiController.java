@@ -33,7 +33,7 @@ public class InternalDbApiController {
         message.setReceivedTs(new Timestamp(System.currentTimeMillis()));
         message.setStatus("NEW");
         msgRepository.save(message);
-
+System.out.println("message send : ");
         return ResponseEntity.ok().build();
     }
     }
